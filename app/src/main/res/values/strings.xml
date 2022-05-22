@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContextMenu on ListView</string>
+    <string name="add_to_cart">Add To Cart</string>
+</resources>

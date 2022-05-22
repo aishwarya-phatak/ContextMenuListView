@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addToCart"
+        android:title="@string/add_to_cart">
+    </item>
+
+    <item
+        android:id="@+id/like"
+        android:title="Like">
+    </item>
+
+    <item
+        android:id="@+id/dislike"
+        android:title="Dislike">
+    </item>
+
+    <item
+        android:id="@+id/comments"
+        android:title="Comments">
+    </item>
+</menu>
