@@ -3,6 +3,7 @@ package com.example.contextmenulistview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
@@ -14,8 +15,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ListView listViewFoodItems;
+    Resources resources;
     ArrayAdapter<String> stringArrayAdapter;
-    String [] foodItems = {"Pav bhaji","Vada Pav","Pani Puri","Medu vada"};
+    String [] foodItems;
     int menuItem;
 
     @Override
@@ -23,10 +25,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initViews();
+        initResources();
         stringArrayAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1,foodItems);
         listViewFoodItems.setAdapter(stringArrayAdapter);
         registerForContextMenu(listViewFoodItems);
+    }
+
+    private void initResources()
+    {
+        resources = getResources();
+        foodItems = resources.getStringArray(R.array.foodItems);
     }
 
 

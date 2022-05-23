@@ -7,16 +7,16 @@
 
     <item
         android:id="@+id/like"
-        android:title="Like">
+        android:title="@string/like">
     </item>
 
     <item
         android:id="@+id/dislike"
-        android:title="Dislike">
+        android:title="@string/dislike">
     </item>
 
     <item
         android:id="@+id/comments"
-        android:title="Comments">
+        android:title="@string/comments">
     </item>
 </menu>

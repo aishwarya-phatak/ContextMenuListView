@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">ContextMenu on ListView</string>
     <string name="add_to_cart">Add To Cart</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="comments">Comments</string>
+    <string-array name="foodItems">
+        <item>PavBhaji</item>
+        <item>Pani Puri</item>
+        <item>Vada Pav</item>
+        <item>Medu vada</item>
+    </string-array>
 </resources>
